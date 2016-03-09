@@ -14,7 +14,7 @@ $('button').click(function(){
 starWarsPlanet.fetch().done(function(){
   starWarsPlanet.each(function(planet){
     $('.buttonLabel').html('Submit');
-    console.log(planet.get('name') + '(' + planet.get("population") +')');
+    console.log(planet.get('name') + ', population = (' + planet.get("population") +')');
   // var planetStats = planet.get("name") + '(' + planet.get("population") +')';
     });
   });
